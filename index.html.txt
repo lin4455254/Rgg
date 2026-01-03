@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-TW" class="h-full scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新竹縣RG - 優雅舞動 • 質感成長</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+    
+    :root {
+      --primary-soft: #fffafa;
+      --accent-pink: #f8d7da;
+      --text-brown: #8e7d7d;
+      --text-light: #bca0a0;
+      --border-color: #f3e8e8;
+      --line-green: #06c755;
+      --form-blue: #4a90e2;
+      --ig-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    body {
+      font-family: "Optima", "Candara", "Noto Sans TC", sans-serif;
+      background: #ffffff;
+      color: var(--text-brown);
+      letter-spacing: 0.05em;
+    }
+
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(243, 232, 232, 0.5);
+    }
+
+    .logo-icon {
+      background: linear-gradient(135deg, var(--accent-pink), #fff);
+      border: 1px solid var(--accent-pink);
+      box-shadow: 0 4px 10px rgba(248, 215, 218, 0.4);
+    }
+
+    .course-card {
+      transition: all 0.4s ease;
+      border: 1px solid var(--border-color);
+    }
+
+    .course-card:hover {
+      border-color: var(--accent-pink);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(142, 125, 125, 0.05);
+    }
+
+    /* 修正後的按鈕樣式 */
+    .btn-line {
+      background: var(--line-green);
+      box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
+      cursor: pointer;
+    }
+
+    .btn-form {
+      background: var(--form-blue);
+      box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+      cursor: pointer;
+    }
+
+    .btn-ig {
+      background: var(--ig-gradient);
+      box-shadow: 0 4px 12px rgba(220, 39, 67, 0.3);
+      cursor: pointer;
+    }
+
+    .section-title {
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body class="antialiased text-[#8e7d7d]">
+
+  <!-- 導航列 -->
+  <header class="glass-nav fixed top-0 w-full h-[90px] z-50 flex items-center justify-between px-6 md:px-16">
+    <div class="flex items-center gap-4">
+      <div class="logo-icon w-12 h-12 rounded-full flex items-center justify-center italic font-bold text-lg">RG</div>
+      <h1 class="text-xl font-medium tracking-widest">新竹縣RG</h1>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 text-sm">
+      <a href="#about" class="hover:text-[#bca0a0] transition-colors">關於我們</a>
+      <a href="#benefits" class="hover:text-[#bca0a0] transition-colors">運動益處</a>
+      <a href="#courses" class="hover:text-[#bca0a0] transition-colors">課程計畫</a>
+      <a href="#shop" class="hover:text-[#bca0a0] transition-colors">精選裝備</a>
+      <a href="#location" class="hover:text-[#bca0a0] transition-colors">時段地區</a>
+      <a href="#registration" class="bg-[#f8d7da] px-4 py-2 rounded-full hover:bg-[#f3e8e8] transition-colors font-medium">開始報名</a>
+    </nav>
+  </header>
+
+  <main class="pt-[90px]">
+    
+    <!-- 關於我們區塊 -->
+    <section id="about" class="max-w-[1100px] mx-auto px-6 py-20">
+      <div class="bg-[#fffafa] border border-[#f3e8e8] rounded-[20px] p-10 md:p-20 text-center">
+        <h2 class="text-3xl md:text-4xl font-light mb-8 leading-relaxed tracking-widest">優雅，是長在骨子裡的自信</h2>
+        <div class="max-w-3xl mx-auto space-y-8 text-center">
+          <p class="leading-relaxed">
+            在<strong>新竹縣RG</strong>，我們致力於將運動轉化為美學的體驗。針對成長中的孩子，我們提供全方位的<strong>幼兒律動與協調感知訓練</strong>，讓身體在音樂旋律中自然舒展。
+          </p>
+          
+          <div class="grid md:grid-cols-3 gap-10 mt-12">
+            <div class="space-y-4">
+              <div class="text-[#d1a5a5] text-2xl font-light">協調感知</div>
+              <p class="text-sm text-[#bca0a0] leading-loose">透過器械操作與跳躍動作，強化空間感知與大腦對肢體的精細控制能力。</p>
+            </div>
+            <div class="space-y-4">
+              <div class="text-[#d1a5a5] text-2xl font-light">幼兒律動</div>
+              <p class="text-sm text-[#bca0a0] leading-loose">結合音樂節奏與自然舞動，培養孩子初期的韻律感與肌肉爆發力。</p>
+            </div>
+            <div class="space-y-4">
+              <div class="text-[#d1a5a5] text-2xl font-light">姿態養成</div>
+              <p class="text-sm text-[#bca0a0] leading-loose">從基礎站姿開始，改善含胸駝背，從小建立優美端正的身姿線條。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 為什麼要運動 -->
+    <section id="benefits" class="max-w-[1100px] mx-auto px-6 py-10 bg-white">
+      <div class="text-center mb-12">
+        <h2 class="section-title text-3xl">為什麼孩子需要運動？</h2>
+        <p class="text-[#bca0a0] text-sm mt-2">不僅是體能的鍛鍊，更是品格與大腦的全面開發</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 border border-gray-50 rounded-xl hover:bg-[#fffafa] transition-colors">
+          <div class="text-xl mb-3 text-[#d1a5a5]">01 強化大腦連結</div>
+          <p class="text-xs text-[#bca0a0] leading-relaxed">研究證實規律運動能促進多巴胺分泌，提升孩子的專注力與學習效率。</p>
+        </div>
+        <div class="p-6 border border-gray-50 rounded-xl hover:bg-[#fffafa] transition-colors">
+          <div class="text-xl mb-3 text-[#d1a5a5]">02 心理韌性培養</div>
+          <p class="text-xs text-[#bca0a0] leading-relaxed">在重複練習與克服動作難點的過程中，孩子能學會如何面對挫折與情緒調節。</p>
+        </div>
+        <div class="p-6 border border-gray-50 rounded-xl hover:bg-[#fffafa] transition-colors">
+          <div class="text-xl mb-3 text-[#d1a5a5]">03 骨骼與免疫力</div>
+          <p class="text-xs text-[#bca0a0] leading-relaxed">適度的負重與跳躍能幫助骨骼發育，增強免疫系統，減少孩子生病的機率。</p>
+        </div>
+        <div class="p-6 border border-gray-50 rounded-xl hover:bg-[#fffafa] transition-colors">
+          <div class="text-xl mb-3 text-[#d1a5a5]">04 社交與情緒</div>
+          <p class="text-xs text-[#bca0a0] leading-relaxed">與同儕共同練習，學習團體規範與互助，釋放壓力並維持快樂的心情。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 課程計畫 -->
+    <section id="courses" class="max-w-[1100px] mx-auto px-6 py-16">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-light tracking-[0.2em] mb-4">課程計畫</h2>
+        <p class="text-[#bca0a0]">適合 7 歲以上兒童及青少年</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <!-- 興趣班 -->
+        <div class="course-card bg-white rounded-xl p-10 relative">
+          <span class="absolute top-6 right-6 border border-[#f8d7da] bg-[#fffafa] text-xs px-3 py-1 rounded-full">預約體驗</span>
+          <span class="text-[#d1a5a5] text-sm font-medium tracking-widest uppercase">General Interest</span>
+          <h3 class="text-xl font-medium my-2">啟蒙興趣班</h3>
+          <div class="space-y-3 mt-4 text-sm text-[#bca0a0] leading-relaxed">
+            <p><strong>• 基礎節奏練習：</strong>透過音樂遊戲與律動，培養敏銳的拍點感受與身體彈性。</p>
+            <p><strong>• 手具初探操作：</strong>認識球、繩、環等基礎手具，練習簡單的拋接與撥轉感知。</p>
+            <p><strong>• 姿態優化訓練：</strong>著重於核心平衡與柔軟度啟蒙，建立正確的身體線條意識。</p>
+          </div>
+          <div class="border-t border-dashed border-[#f3e8e8] mt-8 pt-6 flex justify-between items-center">
+            <span class="text-sm italic font-medium">體驗課 / $500</span>
+            <span class="text-[10px] text-[#bca0a0]">7 歲以上適用</span>
+          </div>
+        </div>
+
+        <!-- 基礎班 -->
+        <div class="course-card bg-white rounded-xl p-10 relative">
+          <span class="text-[#d1a5a5] text-sm font-medium tracking-widest uppercase">Professional Foundation</span>
+          <h3 class="text-xl font-medium my-2">優雅基礎班</h3>
+          <div class="space-y-3 mt-4 text-sm text-[#bca0a0] leading-relaxed">
+            <p><strong>• 手具技術進階：</strong>深化的五大手具操作技巧，包含高難度拋接、繞環與器械流動感。</p>
+            <p><strong>• 動作套路編排：</strong>結合體操與舞蹈元素，進行短節奏成套練習，強化動作流暢度。</p>
+            <p><strong>• 舞台表現訓練：</strong>針對音樂情感進行肢體詮釋，培養從指尖到眼神的舞台感染力。</p>
+          </div>
+          <div class="border-t border-dashed border-[#f3e8e8] mt-8 pt-6 flex justify-between items-center">
+            <span class="text-sm italic font-medium">常態班課程</span>
+            <span class="text-[10px] text-[#bca0a0]">請聯繫 LINE 諮詢</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 品牌裝備購買區塊 -->
+    <section id="shop" class="max-w-[1100px] mx-auto px-6 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl font-light tracking-[0.2em] mb-2">精選裝備</h2>
+        <p class="text-sm text-[#bca0a0]">提供學員專業及必要裝備選購</p>
+      </div>
+      <div class="bg-[#fffafa] border border-[#f3e8e8] rounded-xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- 現貨配件 -->
+          <div class="text-center space-y-6 md:border-r border-[#eee] md:px-4">
+            <h5 class="text-lg font-medium">現貨供應項目</h5>
+            <div class="space-y-4 text-sm text-[#bca0a0]">
+              <div class="flex flex-col items-center">
+                <span class="font-medium text-[#d1a5a5] text-base">專業半截鞋 / $200</span>
+                <span class="text-xs mt-1">保護足部，提升旋轉穩定度</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <span class="font-medium text-[#d1a5a5] text-base">質感帆布包包</span>
+                <span class="text-xs mt-1">方便收納練習服與個人用品</span>
+              </div>
+            </div>
+          </div>
+          <!-- 諮詢說明 -->
+          <div class="text-center flex flex-col justify-center space-y-4">
+            <h5 class="text-lg font-medium">專業裝備代訂與建議</h5>
+            <div class="space-y-2 text-sm text-[#bca0a0] leading-relaxed px-4">
+              <p>我們提供以下專業器材諮詢：</p>
+              <div class="flex flex-wrap justify-center gap-2 text-xs font-medium">
+                <span class="bg-white border border-[#eee] px-2 py-1 rounded">環</span>
+                <span class="bg-white border border-[#eee] px-2 py-1 rounded">球</span>
+                <span class="bg-white border border-[#eee] px-2 py-1 rounded">棍棒</span>
+                <span class="bg-white border border-[#eee] px-2 py-1 rounded">彩帶</span>
+                <span class="bg-white border border-[#eee] px-2 py-1 rounded">比賽服</span>
+                <span class="bg-white border border-[#eee] px-2 py-1 rounded">練習服</span>
+              </div>
+              <p class="mt-4">如需了解規格或選購建議，請於現場詢問教練。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 時間地點 -->
+    <section id="location" class="max-w-[1100px] mx-auto px-6 py-20">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-light tracking-[0.2em] mb-4">招生資訊</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- 地區區塊 -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-1.5 h-6 bg-[#d1a5a5]"></div>
+            <h3 class="text-xl font-medium tracking-widest">開課地區</h3>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-[#fffafa] border border-[#f3e8e8] rounded-xl p-8 text-center hover:border-[#d1a5a5] transition-colors">
+              <span class="text-2xl font-light tracking-widest">竹東</span>
+            </div>
+            <div class="bg-[#fffafa] border border-[#f3e8e8] rounded-xl p-8 text-center hover:border-[#d1a5a5] transition-colors">
+              <span class="text-2xl font-light tracking-widest">竹北</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 時段區塊 -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-1.5 h-6 bg-[#d1a5a5]"></div>
+            <h3 class="text-xl font-medium tracking-widest">上課時間</h3>
+          </div>
+          <div class="bg-white border border-[#f3e8e8] rounded-xl p-8 flex flex-col items-center justify-center h-full min-h-[160px]">
+            <span class="text-xs text-[#bca0a0] mb-2 tracking-[0.3em] uppercase">Training Session</span>
+            <span class="text-4xl font-light">17:00 - 19:00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 報名連結區 -->
+    <section id="registration" class="max-w-[1100px] mx-auto px-6 py-20 text-center bg-[#fffafa] rounded-3xl mb-20">
+      <div class="max-w-4xl mx-auto space-y-12">
+        <div class="space-y-4">
+          <h2 class="text-4xl font-light tracking-[0.2em]">立即開啟優雅旅程</h2>
+          <p class="text-[#bca0a0] italic">報名完成後，請務必私訊官方 LINE 確認報名成功</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+          <!-- 報名連結：確保外部連結跳轉正常 -->
+          <a href="https://lin4455254.github.io/Rgg/" target="_blank" rel="noopener noreferrer" class="btn-form w-full md:w-64 text-white px-8 py-5 rounded-2xl text-lg font-medium transition-all hover:scale-105 flex items-center justify-center gap-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            填寫報名表單
+          </a>
+          <!-- LINE：優化後的官方連結 -->
+          <a href="https://line.me/R/ti/p/@BteccU9" target="_blank" rel="noopener noreferrer" class="btn-line w-full md:w-64 text-white px-8 py-5 rounded-2xl text-lg font-medium transition-all hover:scale-105 flex items-center justify-center gap-3">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 10.304c0-5.691-5.383-10.304-12-10.304s-12 4.613-12 10.304c0 5.097 4.272 9.356 10.051 10.135.391.084.924.258 1.058.594.122.307.08.788.039 1.099l-.173 1.039c-.052.312-.253 1.221 1.091.666 1.344-.555 7.258-4.275 9.904-7.317 1.833-2.11 2.03-3.951 2.03-5.22z"></path></svg>
+            官方 LINE 確認
+          </a>
+          <!-- IG：直接連結至網頁版頁面以避免手機內建瀏覽器卡死 -->
+          <a href="https://www.instagram.com/hcc.rg/" target="_blank" rel="noopener noreferrer" class="btn-ig w-full md:w-64 text-white px-8 py-5 rounded-2xl text-lg font-medium transition-all hover:scale-105 flex items-center justify-center gap-3">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+            追蹤 IG 粉專
+          </a>
+        </div>
+        
+        <div class="pt-8">
+          <p class="text-xs text-red-400 font-medium">✨ 提醒：報名完成後請私訊官方 LINE 確認報名完成 ✨</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-16 text-center border-t border-[#f3e8e8] text-[#bca0a0] text-xs space-y-2">
+    <p>© 2024 新竹縣RG培訓中心. All Rights Reserved.</p>
+    <p>新竹縣竹北/竹東韻律體操教學推廣</p>
+  </footer>
+
+</body>
+</html>
+
